@@ -6,7 +6,7 @@
 **Client:** [Client Name]  
 **Proposal Date:** [Current Date]  
 **Proposed Rate:** $22/hour  
-**Total Timeline:** 65 days  
+**Total Timeline:** 2 months (60 days)  
 **Availability:** 25-30 hours/week  
 
 ---
@@ -15,7 +15,7 @@
 
 ### Hourly Rate & Total Investment
 - **Hourly Rate:** $22 USD/hour
-- **Total Estimated Hours:** 241 hours (11 days × 22 hours/day average)
+- **Total Estimated Hours:** 241 hours (2 months × 4 hours/day average)
 - **Total Project Cost:** $5,300 USD
 - **All-inclusive pricing:** No additional platform fees, taxes, or hidden costs
 
@@ -35,10 +35,10 @@
 
 ## 2. Effort & Timeline
 
-### Detailed Timeline (11 Days)
+### Detailed Timeline (2 Months - 60 Days)
 
-#### Phase 1: Discovery & UX Design (Days 1-2)
-- **Duration:** 2 days
+#### Phase 1: Discovery & UX Design (Days 1-10)
+- **Duration:** 10 days
 - **Hours:** 20 hours
 - **Deliverables:**
   - User research and persona development
@@ -47,8 +47,8 @@
   - Brand guidelines and visual identity
   - Responsive design mockups for all key pages
 
-#### Phase 2: Core Platform Development (Days 3-7)
-- **Duration:** 5 days
+#### Phase 2: Core Platform Development (Days 11-35)
+- **Duration:** 25 days
 - **Hours:** 100 hours
 - **Deliverables:**
   - Next.js 14 application setup with TypeScript
@@ -60,8 +60,8 @@
   - Search and filtering functionality
   - Bilingual support (DE/EN) with i18n
 
-#### Phase 3: Payments & ATS-Lite (Days 8-9)
-- **Duration:** 2 days
+#### Phase 3: Payments & ATS-Lite (Days 36-45)
+- **Duration:** 10 days
 - **Hours:** 50 hours
 - **Deliverables:**
   - Stripe, PayPal, and TWINT integration
@@ -71,8 +71,8 @@
   - Credit system and plan management
   - Payment webhooks and automation
 
-#### Phase 4: SEO, Accessibility & Performance (Day 10)
-- **Duration:** 1 day
+#### Phase 4: SEO, Accessibility & Performance (Days 46-52)
+- **Duration:** 7 days
 - **Hours:** 35 hours
 - **Deliverables:**
   - Google Jobs JSON-LD implementation
@@ -82,8 +82,8 @@
   - Image optimization and CDN setup
   - Structured data and rich snippets
 
-#### Phase 5: Content Creation & Launch (Day 11 - Part 1)
-- **Duration:** 0.5 day
+#### Phase 5: Content Creation & Launch (Days 53-58)
+- **Duration:** 6 days
 - **Hours:** 25 hours
 - **Deliverables:**
   - Demo content creation (12 jobs, 8 companies, 4 blog posts)
@@ -93,8 +93,8 @@
   - Admin back office completion
   - Content management system
 
-#### Phase 6: Testing & Quality Assurance (Day 11 - Part 2)
-- **Duration:** 0.5 day
+#### Phase 6: Testing & Quality Assurance (Days 59-60)
+- **Duration:** 2 days
 - **Hours:** 11 hours
 - **Deliverables:**
   - Comprehensive testing (unit, integration, E2E)
@@ -108,7 +108,7 @@
 - **Hours per week:** 25-30 hours
 - **Working days:** Monday to Friday
 - **Earliest start date:** [Start Date]
-- **Delivery date:** [End Date] (11 days from start)
+- **Delivery date:** [End Date] (2 months from start)
 
 ---
 
