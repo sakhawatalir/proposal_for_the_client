@@ -4,7 +4,7 @@
 
 **Project:** Talentpfad.ch - Swiss Job Platform  
 **Client:** realrichbag  
-**Proposal Date:** January 2, 2025  
+**Proposal Date:** October 3, 2024  
 **Proposed Rate:** $22/hour  
 **Total Timeline:** 2 months (60 days)  
 **Availability:** 25-30 hours/week  
