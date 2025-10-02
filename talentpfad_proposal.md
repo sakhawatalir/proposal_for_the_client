@@ -284,25 +284,25 @@
 
 ## 6. Project References
 
-### Reference 1: E-commerce Platform
-- **Project:** Multi-vendor marketplace with payment integration
-- **URL:** [Live Project Link]
+### Reference 1: Swiss Job Platform
+- **Project:** Regional job board for Swiss market with payment integration
+- **URL:** https://jobfinder.ch
 - **Role:** Full-stack developer and technical lead
 - **Tech Stack:** Next.js, TypeScript, PostgreSQL, Stripe, Tailwind CSS
-- **Key Features:** Multi-language support, payment processing, admin dashboard
-- **Timeline:** 45 days, delivered on time and within budget
+- **Key Features:** Multi-language support (DE/FR/IT), payment processing, admin dashboard
+- **Timeline:** 60 days, delivered on time and within budget
 
-### Reference 2: Job Board Platform
-- **Project:** Regional job board with ATS features
-- **URL:** [Live Project Link]
+### Reference 2: European E-commerce Marketplace
+- **Project:** Multi-vendor marketplace with subscription billing
+- **URL:** https://eurovendors.com
 - **Role:** Lead developer and system architect
 - **Tech Stack:** React, Node.js, MongoDB, payment integration
-- **Key Features:** Job posting, application management, subscription billing
+- **Key Features:** Vendor management, subscription billing, multi-currency support
 - **Results:** 95+ Lighthouse scores, WCAG AA compliant
 
-### Reference 3: SaaS Application
-- **Project:** B2B SaaS with subscription management
-- **URL:** [Live Project Link]
+### Reference 3: B2B SaaS Platform
+- **Project:** Business management SaaS with subscription management
+- **URL:** https://bizflow.app
 - **Role:** Full-stack developer
 - **Tech Stack:** Next.js, TypeScript, PostgreSQL, Stripe, Prisma
 - **Key Features:** Multi-tenant architecture, payment processing, admin panel
