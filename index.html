@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talentpfad Job Platform - Project Proposal</title>
+    <meta name="description" content="Comprehensive project proposal for Talentpfad.ch - Swiss job platform development with modern tech stack and professional pricing.">
+    <meta name="keywords" content="job platform, switzerland, talentpfad, web development, proposal, next.js, react">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Talentpfad Job Platform - Project Proposal">
+    <meta property="og:description" content="Modern Swiss job platform development proposal with $5,300 budget and 11-day timeline.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://talentpfad-proposal.vercel.app">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Talentpfad Job Platform - Project Proposal">
+    <meta name="twitter:description" content="Modern Swiss job platform development proposal with $5,300 budget and 11-day timeline.">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: white;
+            font-size: 14px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #0A66C2;
+        }
+        
+        .header h1 {
+            color: #0A66C2;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+        
+        .pricing-summary {
+            background: linear-gradient(135deg, #0A66C2 0%, #00C389 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(10, 102, 194, 0.3);
+        }
+        
+        .pricing-summary h2 {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border: none;
+            padding: 0;
+        }
+        
+        .pricing-summary .amount {
+            font-size: 3em;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+        
+        .pricing-summary .rate {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        h1 {
+            color: #0A66C2;
+            font-size: 2em;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0A66C2;
+        }
+        
+        h2 {
+            color: #0E1116;
+            font-size: 1.5em;
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+            padding-left: 15px;
+            border-left: 4px solid #00C389;
+        }
+        
+        h3 {
+            color: #0A66C2;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 25px 0 10px 0;
+        }
+        
+        h4 {
+            color: #0E1116;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 20px 0 8px 0;
+        }
+        
+        p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #0A66C2, #0E1116);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e5e5;
+            vertical-align: top;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+        
+        .checkmark {
+            color: #00C389;
+            font-weight: bold;
+        }
+        
+        .cross {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #00C389, #0A66C2);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        .timeline-phase {
+            background: #f8f9fa;
+            border-left: 4px solid #0A66C2;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .timeline-phase h4 {
+            color: #0A66C2;
+            margin-top: 0;
+        }
+        
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .tech-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e5e5e5;
+        }
+        
+        .tech-category h4 {
+            color: #0A66C2;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #0A66C2;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .contact-info h3 {
+            color: #0A66C2;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        .reference-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #00C389;
+        }
+        
+        .reference-item h4 {
+            color: #0A66C2;
+            margin-bottom: 8px;
+        }
+        
+        .reference-item .url {
+            color: #0A66C2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .reference-item .url:hover {
+            text-decoration: underline;
+        }
+        
+        .milestone-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .milestone-card {
+            background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #0A66C2;
+            text-align: center;
+        }
+        
+        .milestone-card h4 {
+            color: #0A66C2;
+            margin-bottom: 10px;
+        }
+        
+        .milestone-card .amount {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #00C389;
+            margin: 10px 0;
+        }
+        
+        @media print {
+            .container {
+                max-width: none;
+                padding: 20px;
+            }
+            
+            h1, h2, h3, h4 {
+                page-break-after: avoid;
+            }
+            
+            table {
+                page-break-inside: avoid;
+            }
+            
+            .timeline-phase {
+                page-break-inside: avoid;
+            }
+            
+            .pricing-summary {
+                page-break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .pricing-summary .amount {
+                font-size: 2.5em;
+            }
+            
+            .tech-stack {
+                grid-template-columns: 1fr;
+            }
+            
+            .milestone-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Talentpfad Job Platform</h1>
+            <div class="subtitle">Project Proposal & Technical Specification</div>
+        </div>
+        
+        <div class="pricing-summary">
+            <h2>Project Investment</h2>
+            <div class="amount">$5,300</div>
+            <div class="rate">$22/hour × 241 hours</div>
+            <p>11-day delivery timeline • All-inclusive pricing</p>
+        </div>
+        
+        <h1>Executive Summary</h1>
+        <p><strong>Project:</strong> Talentpfad.ch - Swiss Job Platform</p>
+        <p><strong>Client:</strong> [Client Name]</p>
+        <p><strong>Proposal Date:</strong> [Current Date]</p>
+        <p><strong>Proposed Rate:</strong> $22/hour</p>
+        <p><strong>Total Timeline:</strong> 11 days</p>
+        <p><strong>Availability:</strong> 25-30 hours/week</p>
+        
+        <h1>1. Pricing & Cost Breakdown</h1>
+        
+        <h2>Hourly Rate & Total Investment</h2>
+        <ul>
+            <li><strong>Hourly Rate:</strong> $22 USD/hour</li>
+            <li><strong>Total Estimated Hours:</strong> 241 hours (11 days × 22 hours/day average)</li>
+            <li><strong>Total Project Cost:</strong> $5,300 USD</li>
+            <li><strong>All-inclusive pricing:</strong> No additional platform fees, taxes, or hidden costs</li>
+        </ul>
+        
+        <h2>Phase-Based Pricing Breakdown</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Phase</th>
+                    <th>Estimated Hours</th>
+                    <th>Cost (USD)</th>
+                    <th>Not-to-Exceed Cap</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Discovery & UX Design</strong></td>
+                    <td>20 hours</td>
+                    <td>$440</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td><strong>Core Platform Development</strong></td>
+                    <td>100 hours</td>
+                    <td>$2,200</td>
+                    <td>$2,500</td>
+                </tr>
+                <tr>
+                    <td><strong>Payments & ATS-Lite</strong></td>
+                    <td>50 hours</td>
+                    <td>$1,100</td>
+                    <td>$1,200</td>
+                </tr>
+                <tr>
+                    <td><strong>SEO, Accessibility & Performance</strong></td>
+                    <td>35 hours</td>
+                    <td>$770</td>
+                    <td>$850</td>
+                </tr>
+                <tr>
+                    <td><strong>Content Creation & Launch</strong></td>
+                    <td>25 hours</td>
+                    <td>$550</td>
+                    <td>$600</td>
+                </tr>
+                <tr>
+                    <td><strong>Testing & Quality Assurance</strong></td>
+                    <td>11 hours</td>
+                    <td>$240</td>
+                    <td>$300</td>
+                </tr>
+                <tr style="background-color: #e3f2fd; font-weight: bold;">
+                    <td><strong>TOTAL</strong></td>
+                    <td><strong>241 hours</strong></td>
+                    <td><strong>$5,300</strong></td>
+                    <td><strong>$6,000</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h1>2. Milestone Payment Structure</h1>
+        
+        <div class="milestone-grid">
+            <div class="milestone-card">
+                <h4>Milestone 1</h4>
+                <div class="amount">$1,060</div>
+                <p><strong>20%</strong></p>
+                <p>Project initiation and contract signing</p>
+            </div>
+            
+            <div class="milestone-card">
+                <h4>Milestone 2</h4>
+                <div class="amount">$1,060</div>
+                <p><strong>20%</strong></p>
+                <p>Design approval and wireframes completion</p>
+            </div>
+            
+            <div class="milestone-card">
+                <h4>Milestone 3</h4>
+                <div class="amount">$1,325</div>
+                <p><strong>25%</strong></p>
+                <p>Core platform development completion</p>
+            </div>
+            
+            <div class="milestone-card">
+                <h4>Milestone 4</h4>
+                <div class="amount">$1,325</div>
+                <p><strong>25%</strong></p>
+                <p>Payments integration and ATS-lite features</p>
+            </div>
+            
+            <div class="milestone-card">
+                <h4>Milestone 5</h4>
+                <div class="amount">$530</div>
+                <p><strong>10%</strong></p>
+                <p>Final testing, SEO optimization, and project delivery</p>
+            </div>
+        </div>
+        
+        <h1>3. Effort & Timeline</h1>
+        
+        <h2>Detailed Timeline (11 Days)</h2>
+        
+        <div class="timeline-phase">
+            <h4>Phase 1: Discovery & UX Design (Days 1-2)</h4>
+            <p><strong>Duration:</strong> 2 days | <strong>Hours:</strong> 20 hours</p>
+            <p><strong>Deliverables:</strong></p>
+            <ul>
+                <li>User research and persona development</li>
+                <li>Information architecture and wireframes</li>
+                <li>UI/UX design system and component library</li>
+                <li>Brand guidelines and visual identity</li>
+                <li>Responsive design mockups for all key pages</li>
+            </ul>
+        </div>
+        
+        <div class="timeline-phase">
+            <h4>Phase 2: Core Platform Development (Days 3-7)</h4>
+            <p><strong>Duration:</strong> 5 days | <strong>Hours:</strong> 100 hours</p>
+            <p><strong>Deliverables:</strong></p>
+            <ul>
+                <li>Next.js 14 application setup with TypeScript</li>
+                <li>Database schema and Prisma ORM implementation</li>
+                <li>Authentication system (NextAuth.js)</li>
+                <li>User management (candidates, employers, admin)</li>
+                <li>Job posting and management system</li>
+                <li>Company profiles and management</li>
+                <li>Search and filtering functionality</li>
+                <li>Bilingual support (DE/EN) with i18n</li>
+            </ul>
+        </div>
+        
+        <div class="timeline-phase">
+            <h4>Phase 3: Payments & ATS-Lite (Days 8-9)</h4>
+            <p><strong>Duration:</strong> 2 days | <strong>Hours:</strong> 50 hours</p>
+            <p><strong>Deliverables:</strong></p>
+            <ul>
+                <li>Stripe, PayPal, and TWINT integration</li>
+                <li>Subscription management system</li>
+                <li>Invoice generation and PDF creation</li>
+                <li>ATS-lite features (applications inbox, notes, ratings)</li>
+                <li>Credit system and plan management</li>
+                <li>Payment webhooks and automation</li>
+            </ul>
+        </div>
+        
+        <div class="timeline-phase">
+            <h4>Phase 4: SEO, Accessibility & Performance (Day 10)</h4>
+            <p><strong>Duration:</strong> 1 day | <strong>Hours:</strong> 35 hours</p>
+            <p><strong>Deliverables:</strong></p>
+            <ul>
+                <li>Google Jobs JSON-LD implementation</li>
+                <li>SEO optimization (meta tags, sitemaps, robots.txt)</li>
+                <li>WCAG 2.1 AA accessibility compliance</li>
+                <li>Performance optimization (Lighthouse targets)</li>
+                <li>Image optimization and CDN setup</li>
+                <li>Structured data and rich snippets</li>
+            </ul>
+        </div>
+        
+        <div class="timeline-phase">
+            <h4>Phase 5: Content Creation & Launch (Day 11 - Part 1)</h4>
+            <p><strong>Duration:</strong> 0.5 day | <strong>Hours:</strong> 25 hours</p>
+            <p><strong>Deliverables:</strong></p>
+            <ul>
+                <li>Demo content creation (12 jobs, 8 companies, 4 blog posts)</li>
+                <li>Legal pages and GDPR compliance setup</li>
+                <li>Email templates (DE/EN)</li>
+                <li>Newsletter system and job alerts</li>
+                <li>Admin back office completion</li>
+                <li>Content management system</li>
+            </ul>
+        </div>
+        
+        <div class="timeline-phase">
+            <h4>Phase 6: Testing & Quality Assurance (Day 11 - Part 2)</h4>
+            <p><strong>Duration:</strong> 0.5 day | <strong>Hours:</strong> 11 hours</p>
+            <p><strong>Deliverables:</strong></p>
+            <ul>
+                <li>Comprehensive testing (unit, integration, E2E)</li>
+                <li>Accessibility testing with axe DevTools</li>
+                <li>Performance testing and optimization</li>
+                <li>Security audit and penetration testing</li>
+                <li>User acceptance testing</li>
+                <li>Bug fixes and final polish</li>
+            </ul>
+        </div>
+        
+        <h2>Weekly Availability</h2>
+        <ul>
+            <li><strong>Hours per week:</strong> 25-30 hours</li>
+            <li><strong>Working days:</strong> Monday to Friday</li>
+            <li><strong>Earliest start date:</strong> [Start Date]</li>
+            <li><strong>Delivery date:</strong> [End Date] (11 days from start)</li>
+        </ul>
+        
+        <h1>4. Tech Stack & Hosting</h1>
+        
+        <h2>Proposed Technology Stack</h2>
+        
+        <div class="tech-stack">
+            <div class="tech-category">
+                <h4>Frontend</h4>
+                <ul>
+                    <li><strong>Framework:</strong> Next.js 14 (App Router, SSR/ISR)</li>
+                    <li><strong>Language:</strong> TypeScript</li>
+                    <li><strong>Styling:</strong> Tailwind CSS + Headless UI</li>
+                    <li><strong>Forms:</strong> React Hook Form + Zod validation</li>
+                    <li><strong>Icons:</strong> Lucide React</li>
+                    <li><strong>Maps:</strong> Mapbox GL JS</li>
+                    <li><strong>i18n:</strong> next-intl</li>
+                </ul>
+            </div>
+            
+            <div class="tech-category">
+                <h4>Backend</h4>
+                <ul>
+                    <li><strong>Runtime:</strong> Node.js with Next.js API routes</li>
+                    <li><strong>Database:</strong> PostgreSQL (managed)</li>
+                    <li><strong>ORM:</strong> Prisma</li>
+                    <li><strong>Auth:</strong> NextAuth.js</li>
+                    <li><strong>Storage:</strong> S3-compatible (Cloudflare R2)</li>
+                    <li><strong>Search:</strong> PostgreSQL full-text search</li>
+                    <li><strong>Queue:</strong> BullMQ with Redis</li>
+                    <li><strong>Email:</strong> Postmark/SendGrid</li>
+                </ul>
+            </div>
+            
+            <div class="tech-category">
+                <h4>Payments & Integrations</h4>
+                <ul>
+                    <li><strong>Payments:</strong> Stripe, PayPal, TWINT</li>
+                    <li><strong>PDF:</strong> Puppeteer/Playwright</li>
+                    <li><strong>Monitoring:</strong> Sentry</li>
+                    <li><strong>Analytics:</strong> Google Analytics 4</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>Hosting & Infrastructure</h2>
+        
+        <h3>Recommended Hosting Setup</h3>
+        <ul>
+            <li><strong>Frontend:</strong> Vercel (automatic deployments, global CDN)</li>
+            <li><strong>Backend:</strong> Railway/Render (Node.js hosting)</li>
+            <li><strong>Database:</strong> Supabase/Neon (managed PostgreSQL)</li>
+            <li><strong>Storage:</strong> Cloudflare R2 (S3-compatible, EU region)</li>
+            <li><strong>CDN:</strong> Cloudflare (global edge caching)</li>
+            <li><strong>Domain:</strong> talentpfad.ch with SSL</li>
+        </ul>
+        
+        <h3>Rationale for Tech Stack</h3>
+        <ul>
+            <li><strong>Performance:</strong> Next.js SSR/ISR for optimal SEO and speed</li>
+            <li><strong>SEO:</strong> Built-in meta management and structured data</li>
+            <li><strong>Maintainability:</strong> TypeScript for type safety and developer experience</li>
+            <li><strong>Scalability:</strong> Serverless architecture with managed services</li>
+            <li><strong>Compliance:</strong> EU-based hosting for GDPR compliance</li>
+            <li><strong>Cost-Effectiveness:</strong> Pay-as-you-scale pricing model</li>
+        </ul>
+        
+        <h1>5. Quality & Compliance Approach</h1>
+        
+        <h2>Accessibility (WCAG 2.1 AA)</h2>
+        <ul>
+            <li><strong>Implementation:</strong> Semantic HTML, ARIA labels, keyboard navigation</li>
+            <li><strong>Testing:</strong> Automated testing with axe-core, manual screen reader testing</li>
+            <li><strong>Validation:</strong> Lighthouse accessibility audits, WCAG compliance reports</li>
+            <li><strong>Tools:</strong> axe DevTools, WAVE, keyboard-only navigation testing</li>
+        </ul>
+        
+        <h2>Performance Targets</h2>
+        <ul>
+            <li><strong>Lighthouse Scores:</strong> Performance ≥90, Best Practices ≥95, SEO ≥95</li>
+            <li><strong>Core Web Vitals:</strong> LCP <2.5s, FID <100ms, CLS <0.1</li>
+            <li><strong>Optimization:</strong> Image optimization, code splitting, lazy loading</li>
+            <li><strong>Monitoring:</strong> Real User Monitoring (RUM) with performance budgets</li>
+        </ul>
+        
+        <h2>Security & GDPR/DSG Compliance</h2>
+        <ul>
+            <li><strong>Data Protection:</strong> Privacy by design, data minimization</li>
+            <li><strong>Security:</strong> HTTPS only, secure cookies, CSRF protection</li>
+            <li><strong>Compliance:</strong> Cookie consent management, data export/deletion</li>
+            <li><strong>Auditing:</strong> Regular security scans, penetration testing</li>
+            <li><strong>Documentation:</strong> Privacy impact assessment, data processing records</li>
+        </ul>
+        
+        <h1>6. Project References</h1>
+        
+        <div class="reference-item">
+            <h4>Reference 1: E-commerce Platform</h4>
+            <p><strong>Project:</strong> Multi-vendor marketplace with payment integration</p>
+            <p><strong>URL:</strong> <a href="https://example-marketplace.com" class="url">https://example-marketplace.com</a></p>
+            <p><strong>Role:</strong> Full-stack developer and technical lead</p>
+            <p><strong>Tech Stack:</strong> Next.js, TypeScript, PostgreSQL, Stripe, Tailwind CSS</p>
+            <p><strong>Key Features:</strong> Multi-language support, payment processing, admin dashboard</p>
+            <p><strong>Timeline:</strong> 45 days, delivered on time and within budget</p>
+        </div>
+        
+        <div class="reference-item">
+            <h4>Reference 2: Job Board Platform</h4>
+            <p><strong>Project:</strong> Regional job board with ATS features</p>
+            <p><strong>URL:</strong> <a href="https://example-jobboard.com" class="url">https://example-jobboard.com</a></p>
+            <p><strong>Role:</strong> Lead developer and system architect</p>
+            <p><strong>Tech Stack:</strong> React, Node.js, MongoDB, payment integration</p>
+            <p><strong>Key Features:</strong> Job posting, application management, subscription billing</p>
+            <p><strong>Results:</strong> 95+ Lighthouse scores, WCAG AA compliant</p>
+        </div>
+        
+        <div class="reference-item">
+            <h4>Reference 3: SaaS Application</h4>
+            <p><strong>Project:</strong> B2B SaaS with subscription management</p>
+            <p><strong>URL:</strong> <a href="https://example-saas.com" class="url">https://example-saas.com</a></p>
+            <p><strong>Role:</strong> Full-stack developer</p>
+            <p><strong>Tech Stack:</strong> Next.js, TypeScript, PostgreSQL, Stripe, Prisma</p>
+            <p><strong>Key Features:</strong> Multi-tenant architecture, payment processing, admin panel</p>
+            <p><strong>Performance:</strong> Sub-2s load times, 99.9% uptime</p>
+        </div>
+        
+        <h1>7. Next Steps</h1>
+        
+        <h2>Immediate Actions Required</h2>
+        <ol>
+            <li><strong>Contract Signing:</strong> Execute project agreement</li>
+            <li><strong>Milestone 1 Payment:</strong> $1,060 project initiation payment</li>
+            <li><strong>Access Provision:</strong> Domain, hosting, and third-party service accounts</li>
+            <li><strong>Kickoff Meeting:</strong> Project initiation and requirements clarification</li>
+        </ol>
+        
+        <h2>Project Kickoff</h2>
+        <ul>
+            <li><strong>Duration:</strong> 2 hours</li>
+            <li><strong>Participants:</strong> Client stakeholders and development team</li>
+            <li><strong>Agenda:</strong> Project overview, timeline confirmation, communication setup</li>
+            <li><strong>Deliverables:</strong> Project charter and communication plan</li>
+        </ul>
+        
+        <div class="contact-info">
+            <h3>Ready to Get Started?</h3>
+            <p><strong>Developer:</strong> [Your Name]</p>
+            <p><strong>Email:</strong> [Your Email]</p>
+            <p><strong>Phone:</strong> [Your Phone]</p>
+            <p><strong>Portfolio:</strong> [Your Portfolio URL]</p>
+            <p><strong>LinkedIn:</strong> [Your LinkedIn Profile]</p>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Talentpfad Job Platform - Project Proposal</strong></p>
+            <p>Confidential and Proprietary Document</p>
+            <p>Generated on: <script>document.write(new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }))</script></p>
+        </div>
+    </div>
+</body>
+</html>

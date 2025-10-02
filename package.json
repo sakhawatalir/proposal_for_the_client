@@ -1,0 +1,23 @@
+{
+  "name": "talentpfad-proposal",
+  "version": "1.0.0",
+  "description": "Talentpfad Job Platform - Project Proposal",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site - serve index.html'"
+  },
+  "keywords": [
+    "proposal",
+    "job-platform",
+    "switzerland",
+    "talentpfad",
+    "web-development"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
